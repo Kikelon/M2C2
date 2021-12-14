@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Agencia de viajes Fulanito</title>
+    <script src="./code.js"></script>
+</head>
+
+<body>
+    <header class="flex">
+        <div>
+            <h1>Agencia de viajes Fulanito</h1>
+            <h2>Quienes somos</h2>
+            <article>
+                <p> Aquí va un texto que describe la agencia de viajes.</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur numquam veritatis sit sunt
+                    ipsa, amet illum facere corrupti in quam cupiditate maxime tenetur nisi. Nostrum tenetur facilis ex.
+                    Tempore, debitis!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur numquam veritatis sit sunt
+                    ipsa, amet illum facere corrupti in quam cupiditate maxime tenetur nisi. Nostrum tenetur facilis ex.
+                    Tempore, debitis!
+                </p>
+            </article>
+        </div>
+    </header>
+    <form id="dataForm" onsubmit="return false">
+        <ul>
+            <li>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="user_name" />
+            </li>
+            <li>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="user_email" />
+            </li>
+            <li>
+                <label for="destination">Destino:</label>
+                <select name="user_destination" id="destination">
+                    <option selected value="00"> Elige una opción </option>
+                    <option value="01">Andalucía</option>
+                    <option value="02">Aragón</option>
+                    <option value="03">Principado de Asturias</option>
+                    <option value="04">Illes Balears</option>
+                    <option value="05">Canarias</option>
+                    <option value="06">Cantabria</option>
+                    <option value="07">Castilla y León</option>
+                    <option value="08">Castilla - La Mancha</option>
+                    <option value="09">Cataluña</option>
+                    <option value="10">Comunitat Valenciana</option>
+                    <option value="11">Extremadura</option>
+                    <option value="12">Galicia</option>
+                    <option value="13">Comunidad de Madrid</option>
+                    <option value="14">Región de Murcia</option>
+                    <option value="15">Comunidad Foral de Navarra</option>
+                    <option value="16">País Vasco</option>
+                    <option value="17">La Rioja</option>
+                    <option value="18">Ceuta</option>
+                    <option value="19">Melilla</option>
+                </select>
+            </li>
+            <li>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="user_message"></textarea>
+            </li>
+            <li class="button">
+                <button type="submit" onclick="sub()">Enviar</button>
+            </li>
+        </ul>
+    </form>
+    <div id ="tableContainer">
+    </div>
+    <footer>
+        <a target="_blank" href="./index.html">
+            <img src="./images/linkedin-logo-social-media_20x20.png" alt="Logo Linkedin">Nuestra página en LinkedIn
+        </a>
+        <a href="mailto:correo@agenciadeviajesfulanito.com">
+            <img src="./images/1x/twotone_email_black_24dp.png" alt="Email Logo">Mándanos un e-mail
+        </a>
+    </footer>
+</body>
+
+</html>
